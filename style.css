@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-black: #150D26;
+    --secondary-black: #2A1A40;
+    --mist-hover: #F2D027;
+    --light-bg: #A30FA6;
+    --black: #07040D
+}
+
+.hero-section{
+    padding-top:4rem;
+}
+
+
+.top-left{
+    position: relative;
+}
+
+.kings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3;
+}
+
+.kings img {
+    width: 50px;
+    border-right: 3px solid var(--mist-hover);
+    transform-origin: none;
+    border-left: 3px solid var(--light-bg);
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 2px var(--primary-black);
+}
+
+.kings h1 span{
+    color: #A30FA6;
+}
+
+.kings h1{
+    color: #F2D027;
+}
+
+.side{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.side h1{
+    font-size: 2rem;
+    color: #A30FA6;
+}
+
+.side ul li {
+    list-style: none;
+}
+
+.side ul li a {
+    text-decoration: none;
+    color: #fefedf;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side ul li a:hover{
+    color: #eea700;
+    font-size: 1.2rem;
+    transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)  ease-in;
+}
+
+.kings h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+}
+
+
+
+@media screen and (max-width: 548px) {
+    .kings{
+        flex-direction: column;
+        padding-top: 2rem ;
+        position: relative;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.top-left::after{
+    content: "";
+    position: relative;
+    top: 5vh;
+    right: 4vh;
+    background-image: linear-gradient(to right top, #1c4960, #165065, #115769, #0e5e6b, #10656d);
+    width: 250px;
+    height: 250px;
+    filter: blur(18px);
+    z-index: 1;
+    opacity: 0.4;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.bottom-left{
+    position: relative;
+}
+
+.bottom-left::before{
+    position: absolute;
+    bottom: 10vh;
+    left: 10vh;
+    background-image: linear-gradient(to right top, #1c4960, #165065, #115769, #0e5e6b, #10656d);
+    width: 200px;
+    height: 200px;
+    filter: blur(10px);
+    z-index: 999;
+    opacity: 0.4;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.hero-section{
+    position: relative;
+}
+
+.hero-section{
+    background-image: linear-gradient(to right top, #2a1a40, #241739, #1e1433, #19112c, #150d26);
+    min-height: calc(100vh - 12vh);
+    margin-top: auto;
+}
+
+.address{
+    color: #A30FA6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    letter-spacing: 2px;
+    z-index: 2;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.dept{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #F2D027;
+}
+
+.dept span{
+    background-image: linear-gradient(to right top, #a30fa6, #eb007f, #ff5053, #ff942a, #f2d027);
+    background-clip: text;
+    color: transparent;
+}
+
+.present{
+    justify-content: center;
+    display: flex;
+    padding-top: 1rem;
+    color: #911bb3;
+}
+
+.hackathon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    align-items: center;
+    width: 100%;
+}
+
+.hackathon h1{
+    font-size: 3rem;
+    padding-top: 1.2rem;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to left top, #911bb3, #f00079, #ff5331, #eea700, #a6e824);
+
+}
+
+.coordinator{
+    display: flex;
+    padding-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+}
+
+.coordinator h3 span{
+    color: #f2d027;
+} 
+
+.coordinator h3{
+    font-size: 2rem;
+    color: #a30fa6;
+    padding-bottom: 1.2rem;
+}
+
+.coordinator .members .name{
+    color: #f2d027;
+    font-size: 1rem;
+}
+
+.side ul {
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.divider{
+    display: none;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.message{
+    padding-top: 2rem;
+    color: #eea700;
+    font-size: 0.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.address{
+    padding-top: 2rem;
+}
