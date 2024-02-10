@@ -13,8 +13,10 @@
 }
 
 .hero-section{
-    padding-top:4rem;
+    padding-top:3rem;
+    padding-bottom: 4rem;
 }
+
 
 
 .top-left{
@@ -25,8 +27,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 1rem;
     z-index: 3;
+}
+
+@media screen and (max-width: 548) {
+    .kings{
+        margin-left: 4rem;
+    }
 }
 
 .kings img {
@@ -92,12 +102,16 @@
 @media screen and (max-width: 548px) {
     .kings{
         flex-direction: column;
-        padding-top: 2rem ;
         position: relative;
+        display: grid;
         align-self: center;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        place-items: center;
+        place-content: center;
+        margin: 0 auto;
+    }
+
+    .kings h1{
+        text-align: center;
     }
 }
 
@@ -169,9 +183,10 @@
 
 .dept span{
     background-image: linear-gradient(to right top, #a30fa6, #eb007f, #ff5053, #ff942a, #f2d027);
-    background-clip: text;
-    color: transparent;
+        background-clip: text;
+        color: transparent;
 }
+
 
 .present{
     justify-content: center;
@@ -192,10 +207,19 @@
 .hackathon h1{
     font-size: 3rem;
     padding-top: 1.2rem;
+    background-image: linear-gradient(to left top, #911bb3, #f00079, #ff5331, #eea700, #a6e824);
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to left top, #911bb3, #f00079, #ff5331, #eea700, #a6e824);
+}
 
+.some{
+        background-image: linear-gradient(to right top, #a30fa6, #eb007f, #ff5053, #ff942a, #f2d027);
+        background-clip: text;
+        color: transparent;
+
+    background-clip: text;
+    color: transparent;
+    
 }
 
 .coordinator{
@@ -252,3 +276,31 @@
 .address{
     padding-top: 2rem;
 }
+
+.social-media ul li a{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer .side{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 548px){
+    .footer .side{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer .message{
+        padding-bottom: 2rem;
+    }
+}
+
+

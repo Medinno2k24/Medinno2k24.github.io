@@ -1,0 +1,26 @@
+{
+  "name": "medinno2kz.github.io",
+  "version": "1.0.0",
+  "description": "This is a website for My Department Symposium",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Medinno2kz/Medinno2kz.github.io.git"
+  },
+  "keywords": [
+    "Symposium",
+    "Entry"
+  ],
+  "author": "Emmanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Medinno2kz/Medinno2kz.github.io/issues"
+  },
+  "homepage": "https://github.com/Medinno2kz/Medinno2kz.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
